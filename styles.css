@@ -1,6 +1,6 @@
 :root {
   --bg-color: #0E2A47;
-  --accent-color: #FF7F32;
+  --accent-color: #E5671D; /* darkened from #FF7F32 for better contrast */
   --card-bg: rgba(14, 42, 71, 0.85);
   --text-color: #FFFFFF;
   --font-family: Arial, sans-serif;
@@ -14,11 +14,9 @@
 
 body {
   background: url("background.png") no-repeat center center/cover;
-  font-family: Arial, sans-serif;
-  color: white;
+  font-family: var(--font-family);
+  color: var(--text-color);
   line-height: 1.6;
-}
-
 }
 
 .site-header {
