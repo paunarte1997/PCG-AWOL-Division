@@ -1,0 +1,235 @@
+<!-- Complete PCG AWOL Division Website -->
+
+<!-- FILE: styles.css -->
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: url('background.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+.site-header {
+  background-color: #0E2A47;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header.small {
+  flex-direction: column;
+}
+.brand-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.brand-text .tagline {
+  font-size: 0.9rem;
+  color: #FF7F32;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.card {
+  background: rgba(14,42,71,0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.btn {
+  background-color: #FF7F32;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.site-footer {
+  background-color: #0E2A47;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* FILE: index.html */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PCG AWOL Division</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <svg width="48" height="48" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="43" cy="43" r="42" fill="#0E2A47" />
+    </svg>
+    <div class="brand-text">
+      <h1>PCG AWOL DIVISION</h1>
+      <p class="tagline">Upholding Accountability, Preserving Discipline</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="card">
+    <h2>Welcome to PCG AWOL Division</h2>
+    <p>We are responsible for handling AWOL cases and maintaining personnel accountability in the Philippine Coast Guard.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> PCG AWOL Division</p>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- FILE: about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — PCG AWOL Division</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header small">
+  <div class="brand">
+    <svg width="48" height="48" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="43" cy="43" r="42" fill="#0E2A47" />
+    </svg>
+    <div class="brand-text">
+      <h1>PCG AWOL DIVISION</h1>
+      <p class="tagline">Upholding Accountability, Preserving Discipline</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="page">
+  <section class="card">
+    <h2>About Us</h2>
+    <p>The PCG AWOL Division is tasked with monitoring, investigating, and resolving cases of personnel absent without official leave. Our mission is to uphold accountability, maintain discipline, and ensure operational readiness within the Philippine Coast Guard.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year2"></span> PCG AWOL Division</p>
+</footer>
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- FILE: services.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — PCG AWOL Division</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header small">
+  <div class="brand">
+    <svg width="48" height="48" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="43" cy="43" r="42" fill="#0E2A47" />
+    </svg>
+    <div class="brand-text">
+      <h1>PCG AWOL DIVISION</h1>
+      <p class="tagline">Upholding Accountability, Preserving Discipline</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="page">
+  <section class="card">
+    <h2>Our Services</h2>
+    <ul>
+      <li>AWOL case investigation and resolution</li>
+      <li>Personnel accountability monitoring</li>
+      <li>Coordination with relevant PCG units</li>
+      <li>Policy enforcement and advisory</li>
+    </ul>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year3"></span> PCG AWOL Division</p>
+</footer>
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- FILE: contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — PCG AWOL Division</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header small">
+  <div class="brand">
+    <svg width="48" height="48" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="43" cy="43" r="42" fill="#0E2A47" />
+    </svg>
+    <div class="brand-text">
+      <h1>PCG AWOL DIVISION</h1>
+      <p class="tagline">Upholding Accountability, Preserving Discipline</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="page contact-page">
+  <section class="card">
+    <h2>Contact the AWOL Division</h2>
+    <p>For inquiries or to report an AWOL case, please contact:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:awoldivision@coastguard.gov.ph">awoldivision@coastguard.gov.ph</a></li>
+      <li><strong>Phone / Hotline:</strong> +63 2 8527 8481 local 6231</li>
+      <li><strong>Office:</strong> Philippine Coast Guard Headquarters, 139 25th Street, Port Area, Manila, Philippines</li>
+    </ul>
+    <h3>Quick report form</h3>
+    <form class="report-form" onsubmit="alert('This is a demo form. Configure a backend or Formspree to capture reports.'); return false;">
+      <label>Full name (optional)
+        <input type="text" name="name" placeholder="e.g. Juan Dela Cruz">
+      </label>
+      <label>Unit / Station
+        <input type="text" name="unit" placeholder="e.g. Station Bataan">
+      </label>
+      <label>Details
+        <textarea name="details" placeholder="Brief details of the case"></textarea>
+      </label>
+      <button class="btn">Submit report</button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year4"></span> PCG AWOL Division</p>
+</footer>
+<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
