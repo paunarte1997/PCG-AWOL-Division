@@ -13,12 +13,11 @@
 }
 
 body {
-  font-family: var(--font-family);
-  body {
   background: url("background.png") no-repeat center center/cover;
-}
-  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  color: white;
   line-height: 1.6;
+}
 
 }
 
