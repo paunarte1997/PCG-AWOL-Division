@@ -1,6 +1,6 @@
 :root {
   --bg-color: #0E2A47;
-  --accent-color: #E5671D; /* darkened from #FF7F32 for better contrast */
+  --accent-color: #E5671D; /* Improved orange for contrast */
   --card-bg: rgba(14, 42, 71, 0.85);
   --text-color: #FFFFFF;
   --font-family: Arial, sans-serif;
@@ -13,10 +13,37 @@
 }
 
 body {
-  background: url("background.png") no-repeat center center/cover;
   font-family: var(--font-family);
   color: var(--text-color);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background image layer */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("background.png") no-repeat center center/cover;
+  z-index: -2;
+}
+
+/* Watermark-style overlay */
+.site-wrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 42, 71, 0.7); /* subtle overlay */
+  z-index: -1;
 }
 
 .site-header {
